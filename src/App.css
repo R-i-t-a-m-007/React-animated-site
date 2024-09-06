@@ -1,0 +1,149 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&family=Kanit:wght@400;700&display=swap');
+
+html, body {
+  overflow: hidden; /* Hide default scrollbar */
+  height: 100vh; /* Ensure full height */
+}
+
+.circle {
+  position: fixed;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  opacity: 1;
+  pointer-events: none; /* Ensure circles don't interfere with page interactions */
+}
+
+.circle.sm {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.circle.md {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+
+main {
+  height: auto; /* Allow the container to adjust based on its content */
+  overflow: hidden; /* Keep overflow hidden to prevent unwanted scrollbars */
+}
+
+
+
+.selected-work {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: 10;
+  will-change: transform;
+  transition: transform 1s ease-out;
+}
+
+.client-num {
+    position: relative; /* Change to relative positioning */
+    top: 0; /* Start at the top of its container */
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 10; /* Ensure it's above other content */
+    will-change: transform;
+    transition: transform 1s ease-out; /* Smooth transition */
+  }
+  
+  
+
+/* Customize the appearance of the scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust the width as needed */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Customize the color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded edges for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Change color on hover */
+}
+
+/* Navbar specific styles */
+nav {
+  position: relative; /* Ensure it’s relative, not fixed */
+  z-index: 1; /* Optional, to ensure it stays above other content */
+  background-color: #f8c33c;
+}
+
+/* Existing CSS code */
+
+/* MoreWork component styling */
+/* App.css */
+/* ... existing styles ... */
+
+/* App.css */
+/* ... existing styles ... */
+
+.more-work {
+  position: relative; /* Ensure relative positioning */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Adjust height */
+  z-index: 10;
+  will-change: transform;
+  transition: transform 1s ease-out;
+}
+
+/* companyslider.css */
+.company-slider-container {
+  width: 100%;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center align the container */
+  overflow: hidden;
+  position: relative;
+  border-top: 2px solid white; /* Top border */
+  border-bottom: 2px solid white; /* Bottom border */
+}
+
+.company-slider {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+.company-slide {
+  flex: 0 0 auto;
+  width: 150px; /* Adjust size as needed */
+  margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.company-icon {
+  width: 100%;
+  height: auto;
+}
+
+/* Keyframes for auto-scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+/*  */
