@@ -28,7 +28,7 @@ function ClientNum() {
   return (
     <div ref={ref} className="client-num relative bg-gray-800 text-white rounded-t-[4rem] py-16 mt-[4rem] h-fit" data-scroll-section>
       <div className="absolute top-0 left-0 p-8">
-        <h2 className="text-white text-4xl font-bold mb-8">Client Numbers</h2>
+        <h2 className="text-white text-4xl font-bold mb-8" style={{fontFamily: '"Rowdies", sans-serif'}}>Client Numbers</h2>
         <p className="text-xl">Some important text here...</p>
       </div>
       <div className="absolute bottom-0 left-0 p-8">

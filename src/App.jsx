@@ -1,20 +1,29 @@
 import { useRef } from 'react';
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
-import Navbar from './Navbar';
-import Banner from './Banner';
-import WhoWeAre from './WhoWeAre';
-import SelectedWork from './SelectedWork';
-import MoreWork from './MoreWork'; 
+import Navbar from './Home/Navbar';
+import Banner from './Home/Banner';
+import WhoWeAre from './Home/WhoWeAre';
+import SelectedWork from './Home/SelectedWork';
+import MoreWork from './Home/ClientNumber'; 
 import MouseTrail from './MouseTrail'; // Import the MouseTrail component
-import LogoSection from './LogoSection'; // Import the new LogoSection component
+import LogoSection from './Home/LogoSection'; // Import the new LogoSection component
 
 import './App.css';
-import ContentSection from './ContentSection';
-import ImageRowSection from './ImageRowSection';
+import ContentSection from './Home/MeetTheTeam';
+import ImageRowSection from './Home/AwardsSection';
 import CenteredTextSection from './CenteredTextSection';
-import NewSection from './NewSection';
-import PrAbout from './PrAbout';
-import CircularTextSection from './CircularTextSection';
+import NewSection from './Footer';
+import PrAbout from './PR/PrAbout';
+import CircularTextSection from './PR/DomainExpertise';
+import InfluencerOutreachSection from './PR/InfluencerOutreach';
+import MediaRelationsSection from './PR/MediaRelations';
+import StudioAbout from './Studio/StudioAbout';
+import StudioDomain from './Studio/StudioDomain';
+import Portfolio from './Studio/Portfolio';
+import StudiosClient from './Studio/StudioClients';
+import FinanceAbout from './Finance/FinanceAbout';
+import FinanceDomain from './Finance/FinanceDomain';
+import FinanceClients from './Finance/FinanceClients';
 
 function App() {
   const containerRef = useRef(null);
@@ -64,6 +73,33 @@ function App() {
           </section>
           <section data-scroll-section>
             <CircularTextSection /> {/* Add the LogoSection component here */}
+          </section>
+          <section data-scroll-section>
+            <InfluencerOutreachSection /> {/* Add the LogoSection component here */}
+          </section>
+          <section data-scroll-section>
+            <MediaRelationsSection /> {/* Add the LogoSection component here */}
+          </section>
+          <section data-scroll-section>
+            <StudioAbout /> {/* Add the LogoSection component here */}
+          </section>
+          <section data-scroll-section>
+            <StudioDomain /> {/* Add the LogoSection component here */}
+          </section>
+          <section data-scroll-section>
+            <Portfolio /> {/* Add the LogoSection component here */}
+          </section>
+          <section data-scroll-section>
+            <StudiosClient /> {/* Add the LogoSection component here */}
+          </section>
+          <section data-scroll-section>
+            <FinanceAbout /> {/* Add the LogoSection component here */}
+          </section>
+          <section data-scroll-section>
+            <FinanceDomain /> {/* Add the LogoSection component here */}
+          </section>
+          <section data-scroll-section>
+            <FinanceClients /> {/* Add the LogoSection component here */}
           </section>
           <section data-scroll-section>
             <CenteredTextSection /> {/* Add the LogoSection component here */}
