@@ -1,10 +1,12 @@
 /* App.css */
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&family=Kanit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
 html, body {
   overflow: hidden; /* Hide default scrollbar */
   height: 100vh; /* Ensure full height */
+  background-color: #252525;
 }
 
 .circle {
@@ -84,7 +86,7 @@ main {
 nav {
   position: relative; /* Ensure it’s relative, not fixed */
   z-index: 1; /* Optional, to ensure it stays above other content */
-  background-color: #f8c33c;
+  background-color: #121212;
 }
 
 /* Existing CSS code */

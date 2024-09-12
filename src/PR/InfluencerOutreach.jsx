@@ -11,10 +11,10 @@ function InfluencerOutreachSection() {
 
   // Video array
   const videos = [
-    { src: "/src/assets/TfsVid/vid1.mp4", alt: "Video 1" },
-    { src: "/src/assets/TfsVid/vid2.mp4", alt: "Video 2" },
-    { src: "/src/assets/TfsVid/vid3.mp4", alt: "Video 3" },
-    { src: "/src/assets/TfsVid/vid4.mp4", alt: "Video 4" },
+    { src: "/assets/TfsVid/vid1.mp4", alt: "Video 1" },
+    { src: "/assets/TfsVid/vid2.mp4", alt: "Video 2" },
+    { src: "/assets/TfsVid/vid3.mp4", alt: "Video 3" },
+    { src: "/assets/TfsVid/vid4.mp4", alt: "Video 4" },
   ];
 
   React.useEffect(() => {

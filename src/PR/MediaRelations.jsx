@@ -6,15 +6,15 @@ import "slick-carousel/slick/slick-theme.css";
 
 function MediaRelationsSection() {
   const images = [
-    "/src/assets/MediaRelations/HVL1.jpg",
-    "/src/assets/MediaRelations/IMG1.jpeg",
-    "/src/assets/MediaRelations/IMG2.jpeg",
-    "/src/assets/MediaRelations/IMG3.jpeg",
-    "/src/assets/MediaRelations/IMG4.jpeg",
-    "/src/assets/MediaRelations/KAee.jpg",
-    "/src/assets/MediaRelations/Kaee2.jpg",
-    "/src/assets/MediaRelations/Oltera.jpg",
-    "/src/assets/MediaRelations/Oltera1.jpg",
+    "/assets/MediaRelations/HVL1.jpg",
+    "/assets/MediaRelations/IMG1.jpeg",
+    "/assets/MediaRelations/IMG2.jpeg",
+    "/assets/MediaRelations/IMG3.jpeg",
+    "/assets/MediaRelations/IMG4.jpeg",
+    "/assets/MediaRelations/KAee.jpg",
+    "/assets/MediaRelations/Kaee2.jpg",
+    "/assets/MediaRelations/Oltera.jpg",
+    "/assets/MediaRelations/Oltera1.jpg",
   ];
 
   // Slick slider settings

@@ -6,16 +6,16 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 
 const images = [
-  "/src/assets/StudioClient/CateImg1.png", // Dog
-  "/src/assets/StudioClient/CateImg22.jpeg", // Cat
-  "/src/assets/StudioClient/CateImg33.jpeg", // Elephant
-  "/src/assets/StudioClient/CateImg4.png", // Lion
-  "/src/assets/StudioClient/CateImg55.jpeg", // Giraffe
-  "/src/assets/StudioClient/CateImg1.png", // Panda
-  "/src/assets/StudioClient/CateImg22.jpeg", // Koala
-  "/src/assets/StudioClient/CateImg33.jpeg", // Tiger
-  "/src/assets/StudioClient/CateImg4.png", // Bear
-  "/src/assets/StudioClient/CateImg55.jpeg"  // Zebra
+  "/assets/StudioClient/CateImg1.png", // Dog
+  "/assets/StudioClient/CateImg22.jpeg", // Cat
+  "/assets/StudioClient/CateImg33.jpeg", // Elephant
+  "/assets/StudioClient/CateImg4.png", // Lion
+  "/assets/StudioClient/CateImg55.jpeg", // Giraffe
+  "/assets/StudioClient/CateImg1.png", // Panda
+  "/assets/StudioClient/CateImg22.jpeg", // Koala
+  "/assets/StudioClient/CateImg33.jpeg", // Tiger
+  "/assets/StudioClient/CateImg4.png", // Bear
+  "/assets/StudioClient/CateImg55.jpeg"  // Zebra
 ];
 
 function StudiosClient() {
@@ -56,7 +56,7 @@ function StudiosClient() {
       <h2 className="text-white text-8xl font-bold mb-16 text-center" style={{ fontFamily: '"Rowdies", sans-serif' }}>
         Trusted By
       </h2>
-      <div className="flex gap-8">
+      <div className="flex gap-8" style={{ fontFamily: '"Instrument Sans", sans-serif'}}>
         {/* Left Box - 30% width */}
         <div className="flex flex-col justify-center items-center w-[30%] bg-[#1c1c1c] rounded-[4rem] p-8 text-center">
           <p className="text-white text-4xl w-96 font-semibold relative top-8 mb-0">Helping world-class company by creative design.</p>

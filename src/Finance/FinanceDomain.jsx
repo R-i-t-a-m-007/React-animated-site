@@ -20,55 +20,55 @@ function StudioDomain() {
     {
       text: "Business Entity Formation",
       icon: <FaBusinessTime size={50} color="#f8c33c" />,
-      bgImage: "/src/assets/FinanceDomain/boximg1.png",
+      bgImage: "/assets/FinanceDomain/boximg1.png",
       des: "We help you choose the right business structure, from sole proprietorships, partnerships to LLPs and companies, ensuring your business is legally sound and strategically positioned for success.",
     },
     {
       text: "Commencement of Operations",
       icon: <FaNetworkWired size={50} color="#f8c33c" />,
-      bgImage: "/src/assets/FinanceDomain/boximg2.png",
+      bgImage: "/assets/FinanceDomain/boximg2.png",
       des: "We simplify your business launch by managing everything from initial planning to all applicable licenses and other legal compliance, ensuring a seamless start.",
     },
     {
       text: "Industry Specific Solutions",
       icon: <LiaIndustrySolid size={50} color="#f8c33c" />,
-      bgImage: "/src/assets/FinanceDomain/boximg3.png",
+      bgImage: "/assets/FinanceDomain/boximg3.png",
       des: "We provide tailored financial solutions that address the unique challenges of your industry, and guide you through various government schemes and subsidies, enhancing efficiency and profitability.",
     },
     {
       text: "Intellectual Property Rights",
       icon: <MdOutlineSettingsSuggest size={50} color="#f8c33c" />,
-      bgImage: "/src/assets/FinanceDomain/boximg4.png",
+      bgImage: "/assets/FinanceDomain/boximg4.png",
       des: "Safeguard your business with strong Intellectual Property Rights (IPR). We offer expert guidance on patents, trademarks, and copyrights. Let us protect your competitive edge.",
     },
     {
       text: "Accounting & Retainer Services",
       icon: <MdManageAccounts size={50} color="#f8c33c" />,
-      bgImage: "/src/assets/FinanceDomain/boximg5.png",
+      bgImage: "/assets/FinanceDomain/boximg5.png",
       des: "Our accounting services cover bookkeeping, invoicing, income tax, GST and payroll management, delivering reliable financial insights to support your business decisions.",
     },
     {
       text: "Mystery Audits",
       icon: <GrDocumentPerformance size={50} color="#f8c33c" />,
-      bgImage: "/src/assets/FinanceDomain/boximg6.png",
+      bgImage: "/assets/FinanceDomain/boximg6.png",
       des: "Our services offer an unbiased review of your business operations, identifying strengths, weaknesses, and areas for improvement to ensure optimal performance, and quality services along with complete legal compliance.",
     },
     {
       text: "MSME Support",
       icon: <FaRegHandshake size={50} color="#f8c33c" />,
-      bgImage: "/src/assets/FinanceDomain/boximg7.png",
+      bgImage: "/assets/FinanceDomain/boximg7.png",
       des: "Empower your MSME with our specialized support, including registration, government schemes, payment recovery, and compliance services.",
     },
     {
       text: "Income Tax Filings",
       icon: <HiOutlineReceiptTax size={50} color="#f8c33c" />,
-      bgImage: "/src/assets/FinanceDomain/boximg8.png",
+      bgImage: "/assets/FinanceDomain/boximg8.png",
       des: "Simplify tax season with our expert tax planning and income tax filing services, ensuring compliance and optimizing benefits while you focus on your business/job.",
     },
     {
       text: "Loan Facilitation",
       icon: <GrMoney size={50} color="#f8c33c" />,
-      bgImage: "/src/assets/FinanceDomain/boximg9.png",
+      bgImage: "/assets/FinanceDomain/boximg9.png",
       des: "Our loan facilitation services simplify the process, from application to approval, ensuring you get the best financing options for Home, Personal, Business, and Property Loans.",
     }
   ];
@@ -102,7 +102,7 @@ function StudioDomain() {
           Domain Expertise
         </motion.h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-[14rem] px-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-[14rem] px-8" style={{ fontFamily: '"Instrument Sans", sans-serif'}}>
         {data.map((item, index) => (
           <motion.div
             key={index}
@@ -121,10 +121,10 @@ function StudioDomain() {
               {item.icon}
             </div>
             {/* Text */}
-            <p className="text-white text-[33px] font-semibold text-center px-8 py-4 transition-opacity duration-500 opacity-100 group-hover:opacity-0 relative z-10">
+            <p className="text-white text-[31.7px] font-semibold text-center px-8 py-4 transition-opacity duration-500 opacity-100 group-hover:opacity-0 relative z-10">
               {item.text}
             </p>
-            <p className="text-white text-xl text-center mt-4">
+            <p className="text-white text-[22.5px] text-center mt-4">
               {item.des}
             </p>
           </motion.div>

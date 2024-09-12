@@ -12,27 +12,27 @@ function StudioDomain() {
     {
       text: "Food & Beverages",
       icon: <IoFastFoodOutline size={50} color="#f8c33c" />,
-      bgImage: "/src/assets/Domain/food.JPG",
+      bgImage: "/assets/Domain/food.JPG",
     },
     {
       text: "Product",
       icon: <AiOutlineProduct size={50} color="#f8c33c" />,
-      bgImage: "/src/assets/Domain/product.JPG",
+      bgImage: "/assets/Domain/product.JPG",
     },
     {
       text: "Fashion & Lifestyle",
       icon: <MdNightlife size={50} color="#f8c33c" />,
-      bgImage: "/src/assets/Domain/fashion.JPG",
+      bgImage: "/assets/Domain/fashion.JPG",
     },
     {
       text: "Corporate",
       icon: <MdCorporateFare size={50} color="#f8c33c" />,
-      bgImage: "/src/assets/Domain/corporate.JPG",
+      bgImage: "/assets/Domain/corporate.JPG",
     },
     {
       text: "Interiors",
       icon: <SiMaterialdesignicons size={50} color="#f8c33c" />,
-      bgImage: "/src/assets/Domain/interior.JPG",
+      bgImage: "/assets/Domain/interior.JPG",
     }
   ];
 
@@ -65,7 +65,7 @@ function StudioDomain() {
           Domain Expertise
         </motion.h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mt-[14rem] px-8">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mt-[14rem] px-8" style={{ fontFamily: '"Instrument Sans", sans-serif'}}>
         {data.map((item, index) => (
           <motion.div
             key={index}

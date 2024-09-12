@@ -6,17 +6,17 @@ import "slick-carousel/slick/slick-theme.css";
 
 function AwardsSection() {
   const images = [
-    { src: "/src/assets/awards/1.png", alt: "Agency of the Year East - 2024" },
-    { src: "/src/assets/awards/2.png", alt: "World Marketing Congress' WB Best Brand Award - 2021" },
-    { src: "/src/assets/awards/3.png", alt: "Best Social Media Video Campaign for Olterra Brewery" },
-    { src: "/src/assets/awards/4.png", alt: "Women Entreprenuer Award 2023" },
-    { src: "/src/assets/awards/5.png", alt: "Best Use of Social Media for Olterra Brewery Launch" },
-    { src: "/src/assets/awards/6.png", alt: "Agency of the Year East" },
-    { src: "/src/assets/awards/7.png", alt: "Agency of the Year East" },
-    { src: "/src/assets/awards/8.png", alt: "Agency Of The Year East - 2029" },
-    { src: "/src/assets/awards/9.png", alt: "Afaqs Foxglove Best Use of Influencer for Packaged Goods - Bronze for Jacob's Creek" },
-    { src: "/src/assets/awards/10.png", alt: "Best Regional Data-driven Marketing Excellence for Ballentine" },
-    { src: "/src/assets/awards/11.png", alt: "Social Samosa's Superwomen 2023" }
+    { src: "/assets/awards/1.png", alt: "Agency of the Year East - 2024" },
+    { src: "/assets/awards/2.png", alt: "World Marketing Congress' WB Best Brand Award - 2021" },
+    { src: "/assets/awards/3.png", alt: "Best Social Media Video Campaign for Olterra Brewery" },
+    { src: "/assets/awards/4.png", alt: "Women Entreprenuer Award 2023" },
+    { src: "/assets/awards/5.png", alt: "Best Use of Social Media for Olterra Brewery Launch" },
+    { src: "/assets/awards/6.png", alt: "Agency of the Year East" },
+    { src: "/assets/awards/7.png", alt: "Agency of the Year East" },
+    { src: "/assets/awards/8.png", alt: "Agency Of The Year East - 2029" },
+    { src: "/assets/awards/9.png", alt: "Afaqs Foxglove Best Use of Influencer for Packaged Goods - Bronze for Jacob's Creek" },
+    { src: "/assets/awards/10.png", alt: "Best Regional Data-driven Marketing Excellence for Ballentine" },
+    { src: "/assets/awards/11.png", alt: "Social Samosa's Superwomen 2023" }
   ];
 
   const settings = {
@@ -76,7 +76,7 @@ function AwardsSection() {
       <div className="top-0 left-0 p-8">
         <h2 className="text-white text-8xl font-bold mb-8 mt-[8rem]" style={{fontFamily:'"Rowdies", sans-serif'}}>The Hall of Fame!</h2>
       </div>
-      <div className="mt-16 px-8">
+      <div className="mt-16 px-8" style={{ fontFamily: '"Instrument Sans", sans-serif'}}>
         <Slider {...settings}>
           {images.map((image, index) => (
             <div key={index} className="relative p-4 border-l-2 border-[#ffffff1a]">

@@ -4,10 +4,10 @@ import { useInView } from 'react-intersection-observer';
 
 function LogoSection() {
   const logos = [
-    { src: "/src/assets/Logos/PR.png", alt: "Logo 1", number: "01", width: '250px', height: '250px' },
-    { src: "/src/assets/Logos/Studios.png", alt: "Logo 2", number: "02", width: '300px', height: '200px' },
-    { src: "/src/assets/Logos/Talent.png", alt: "Logo 3", number: "03", width: '350px', height: '300px' },
-    { src: "/src/assets/Logos/Finance.png", alt: "Logo 4", number: "04", width: '400px', height: '200px' }
+    { src: "/assets/Logos/PR.png", alt: "Logo 1", number: "01", width: '250px', height: '250px' },
+    { src: "/assets/Logos/Studios.png", alt: "Logo 2", number: "02", width: '300px', height: '200px' },
+    { src: "/assets/Logos/Talent.png", alt: "Logo 3", number: "03", width: '350px', height: '300px' },
+    { src: "/assets/Logos/Finance.png", alt: "Logo 4", number: "04", width: '400px', height: '200px' }
   ];
 
   // Animation controls for the heading

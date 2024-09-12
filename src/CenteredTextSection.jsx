@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { GoArrowUpRight } from 'react-icons/go'; // Import the icon
 
 function CenteredTextSection() {
   // Animation controls
@@ -26,7 +27,7 @@ function CenteredTextSection() {
   };
 
   return (
-    <div ref={ref} className="centered-text-section relative bg-[#121212] rounded-[4rem] py-16 h-screen flex flex-col justify-center items-center">
+    <div ref={ref} className="centered-text-section relative bg-[#121212] rounded-[4rem] py-12 h-screen flex flex-col justify-center items-center">
       <motion.h1
         className="text-white text-[30px] font-bold mb-2"
         style={{ fontFamily: '"Rowdies", sans-serif', lineHeight: '3' }}
@@ -54,6 +55,24 @@ function CenteredTextSection() {
       >
         TOGETHER
       </motion.h3>
+
+      {/* Get in Touch Button with Icon */}
+      <motion.div
+        className="flex items-center mt-14 gap-0"
+        initial="hidden"
+        animate={controls}
+        variants={textReveal}
+      >
+        {/* Get in Touch Button */}
+        <button style={{ fontFamily: '"Instrument Sans", sans-serif'}} className="bg-white text-black px-10 py-8 text-lg font-semibold rounded-full">
+          GET IN TOUCH
+        </button>
+        
+        {/* Arrow Icon */}
+        <div className="bg-white text-black font-semibold p-8 rounded-full flex justify-center items-center">
+          <GoArrowUpRight size={28} />
+        </div>
+      </motion.div>
     </div>
   );
 }

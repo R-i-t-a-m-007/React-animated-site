@@ -10,7 +10,7 @@ function MeetTheTeam() {
           Meet the brains,<br></br> the brawn, &<br></br> the brilliance!
         </h2>
       </div>
-      <div className="flex flex-col leading-relaxed space-y-16 mt-[32rem] px-8">
+      <div className="flex flex-col leading-relaxed space-y-16 mt-[32rem] px-8" style={{ fontFamily: '"Instrument Sans", sans-serif'}}>
         {/* Row 1 */}
         <div className="flex flex-col space-y-12">
           <p className="text-white text-4xl font-medium">
@@ -18,17 +18,17 @@ function MeetTheTeam() {
           </p>
           <div className="flex space-x-28">
             {renderTeamMember(
-              "/src/assets/TeamImg/Sid1 copy.jpg",
+              "/assets/TeamImg/Sid1 copy.jpg",
               "Description 1",
               "https://www.linkedin.com"
             )}
             {renderTeamMember(
-              "/src/assets/TeamImg/Pragati 2 copy.jpg",
+              "/assets/TeamImg/Pragati 2 copy.jpg",
               "Description 2",
               "https://www.linkedin.com"
             )}
             {renderTeamMember(
-              "/src/assets/TeamImg/Eklavya3 copy.jpg",
+              "/assets/TeamImg/Eklavya3 copy.jpg",
               "Description 3",
               "https://www.linkedin.com"
             )}
@@ -42,17 +42,17 @@ function MeetTheTeam() {
           </p>
           <div className="flex space-x-28">
             {renderTeamMember(
-              "/src/assets/TeamImg/Akshita4 copy.jpg",
+              "/assets/TeamImg/Akshita4 copy.jpg",
               "Description 4",
               "https://www.linkedin.com"
             )}
             {renderTeamMember(
-              "/src/assets/TeamImg/Sid1 copy.jpg",
+              "/assets/TeamImg/Sid1 copy.jpg",
               "Description 1",
               "https://www.linkedin.com"
             )}
             {renderTeamMember(
-              "/src/assets/TeamImg/Sikha8 copy.jpg",
+              "/assets/TeamImg/Sikha8 copy.jpg",
               "Description 6",
               "https://www.linkedin.com"
             )}
@@ -66,17 +66,17 @@ function MeetTheTeam() {
           </p>
           <div className="flex space-x-28">
             {renderTeamMember(
-              "/src/assets/TeamImg/Supriyo6 copy.jpg",
+              "/assets/TeamImg/Supriyo6 copy.jpg",
               "Description 7",
               "https://www.linkedin.com"
             )}
             {renderTeamMember(
-              "/src/assets/TeamImg/Arindam7 copy.jpg",
+              "/assets/TeamImg/Arindam7 copy.jpg",
               "Description 8",
               "https://www.linkedin.com"
             )}
             {renderTeamMember(
-              "/src/assets/TeamImg/PRamita5 copy.jpg",
+              "/assets/TeamImg/PRamita5 copy.jpg",
               "Description 5",
               "https://www.linkedin.com"
             )}
@@ -96,7 +96,7 @@ const renderTeamMember = (imgSrc, description, linkedinUrl) => {
         alt={description}
         className="w-[250px] h-[250px] object-cover"
       />
-      <div className="ml-4 text-white flex items-start flex-col justify-center">
+      <div className="ml-4 text-white flex items-start flex-col justify-center" style={{ fontFamily: '"Instrument Sans", sans-serif'}}>
         {/* Flipping Text on Hover */}
         <motion.div
           className="text-lg font-medium mb-2 flex items-center justify-center"

@@ -10,7 +10,7 @@ function Footer() {
         <div className="flex w-full">
           {/* First Division */}
           <div className="w-[35%] p-10 flex items-start justify-center border-r-[1px] border-[#ffffff1a]">
-            <img src="/src/assets/TFS-LOGO-BANNER-alpha2.gif" alt="Logo" className="w-[500px] h-[100px]" />
+            <img src="/assets/logo.png" alt="Logo" className="w-[250px] h-[250px] relative top-24 right-8" />
           </div>
 
           {/* Second Division */}

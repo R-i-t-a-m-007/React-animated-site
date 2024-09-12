@@ -2,13 +2,11 @@ import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import CompanySlider from '../CompanySlider';
-import image1 from '../assets/TrustedBy/2.png';
-import image2 from '../assets/TrustedBy/8.png';
 
 function SelectedWork() {
   const images = [
-    image1,
-    image2,
+    "/assets/TrustedBy/2.png",
+    "/assets/TrustedBy/8.png",
     "https://images.unsplash.com/photo-1531727991582-cfd25ce79613?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
     "https://images.unsplash.com/photo-1580215935060-a5adc57c5157?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80",
     "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?fit=crop&w=634&h=634&q=80",

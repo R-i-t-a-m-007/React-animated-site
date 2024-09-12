@@ -49,7 +49,7 @@ function ClientNumber() {
           />
           {/* Centered Image */}
           <img
-            src="/src/assets/line-img-light.webp"
+            src="/assets/line-img-light.webp"
             alt="Centered Image"
             className="w-full h-full object-contain"
           />

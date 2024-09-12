@@ -44,8 +44,9 @@ function WhoWeAre() {
   return (
     <div ref={sectionRef} className="who-we-are flex flex-col md:flex-row items-start justify-between py-0 px-8 pb-36">
       {/* Left Side */}
-      <div className="w-full md:w-1/2">
-        <h2 className="text-6xl font-semibold text-black mb-4" style={{ fontFamily: '"Kanit", sans-serif' }}>
+      <img src='/public/assets/whoweareimg.webp' alt='image' className='absolute right-[75rem] top-[-12rem] w-[48rem] h-[44rem] object-contain' style={{ filter: 'brightness(65%) invert(0)', WebkitFilter: 'brightness(65%) invert(0)' }} />
+      <div className="w-full md:w-1/2 z-10">
+        <h2 className="text-6xl font-semibold text-white mb-4" style={{ fontFamily: '"Kanit", sans-serif' }}>
           Who We Are
         </h2>
       </div>
@@ -54,7 +55,7 @@ function WhoWeAre() {
       <div className="w-full md:w-2/3">
         <div className="flex flex-col space-y-4">
           <p
-            className="text-4xl leading-relaxed text-black font-semibold animate-text"
+            className="text-4xl leading-relaxed text-white font-semibold animate-text"
             style={{ fontFamily: '"Instrument Sans", sans-serif' }}
           >
             Three Fourth Solutions is where creativity meets strategy and innovation takes centre stage. As a unique and dynamic marketing agency, we are driven by a passion for turning ideas into unforgettable experiences. We’re visionaries with a plan, rebels with a cause, and magicians who transform concepts into reality.

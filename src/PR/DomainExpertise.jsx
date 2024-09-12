@@ -39,7 +39,7 @@ function DomainExpertise() {
   const controls = useAnimation();
   const { ref, inView } = useInView({
     triggerOnce: false,  // Animation triggers every time the component is in view
-    threshold: 0.5,  // Adjust this value to control when the animation should trigger
+    threshold: 0.4,  // Adjust this value to control when the animation should trigger
   });
 
   // Trigger animation when in view
@@ -52,7 +52,7 @@ function DomainExpertise() {
   }, [controls, inView]);
 
   return (
-    <section ref={ref} className="relative bg-[#121212] py-16 rounded-[4rem]">
+    <section ref={ref} className="relative bg-[#121212] pt-14 pb-10 rounded-[4rem]">
       <div className="absolute top-0 left-0 p-8">
         <motion.h2
           className="text-white text-[75px] font-bold mb-8 mt-[8rem] w-[100%]"
@@ -64,7 +64,7 @@ function DomainExpertise() {
           Domain Expertise
         </motion.h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-[20rem] px-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-[20rem] px-8" style={{ fontFamily: '"Instrument Sans", sans-serif'}}>
         {data.map((item, index) => (
           <motion.div
             key={index}
@@ -82,11 +82,8 @@ function DomainExpertise() {
               {item.text}
             </p>
             {/* Lorem Ipsum Text */}
-            <p className="text-white text-center mt-4">
+            <p className="text-white text-[26px] text-center mt-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p className="text-white text-center">
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </motion.div>
         ))}
