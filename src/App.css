@@ -146,6 +146,23 @@ nav {
   }
 }
 
+.loader-fade-enter {
+  transform: translateY(0);
+}
+
+.loader-fade-enter.loader-fade-enter-active {
+  transform: translateY(100%);
+  transition: transform 500ms;
+}
+
+.loader-fade-leave {
+  transform: translateY(100%);
+}
+
+.loader-fade-leave.loader-fade-leave-active {
+  transform: translateY(0);
+  transition: transform 500ms;
+}
 
 
 

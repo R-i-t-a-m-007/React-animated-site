@@ -2,9 +2,10 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
-function Footer() {
+function Footer({ bgColor }) {
   return (
-    <section className="relative bg-[#252525] rounded-[4rem] p-8">
+    <section className="relative bg-[#121212] rounded-[4rem] p-8"
+    style={{ backgroundColor: bgColor }}>
       <div className="flex rounded-[4rem] overflow-hidden">
         {/* Wrapper for border */}
         <div className="flex w-full">

@@ -52,7 +52,7 @@ function FinanceClients() {
   };
 
   return (
-    <div className="trusted-by-section bg-[#121212] rounded-[4rem] p-16">
+    <div className="trusted-by-section bg-[#252525] rounded-[4rem] p-16">
       <h2 className="text-white text-8xl font-bold mb-16 text-center" style={{ fontFamily: '"Rowdies", sans-serif' }}>
         Trusted By
       </h2>

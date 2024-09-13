@@ -7,6 +7,7 @@ import '../App.css';
 import image1 from '/public/assets/bannerImgnew1.jpeg'; // Replace with your image path
 import image2 from '/public/assets/bannerImgnew2.jpeg'; // Replace with your image path
 import image3 from '/public/assets/bannerImgleft.jpeg'; // Replace with your image path
+import image4 from '/public/assets/banner-shape.png';
 
 function Banner() {
   const [isPlaying, setIsPlaying] = useState(false); // Set isPlaying to false initially
@@ -78,7 +79,7 @@ function Banner() {
         {/* Images and Play Button */}
         <div className="relative flex flex-col top-28 items-center gap-4">
           <div className="flex relative bottom-44 right-20 items-center">
-            <img src='/public/assets/banner-shape.png' alt='banner-shape' className='relative top-24 right-10 w-28 text-black' />
+            <img src={image4} alt='banner-shape' className='relative top-24 right-10 w-28 text-black' />
           </div>
           <div className="flex relative right-8 bottom-36 gap-2">
           <motion.div 
@@ -134,7 +135,7 @@ function Banner() {
         </div>
       )}
 
-      <div className="flex flex-row items-center justify-center mt-[30rem] ml-[45rem] absolute">
+      <div className="flex flex-row items-center justify-center mt-[33rem] ml-[45rem] absolute">
         <h2 className="text-6xl font-extrabold text-white text-center mb-4 mr-6"
           style={{ fontFamily: '"Rowdies", sans-serif' }}>
           Let's Begin

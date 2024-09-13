@@ -3,7 +3,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { GoArrowUpRight } from 'react-icons/go'; // Import the icon
 
-function CenteredTextSection() {
+function CenteredTextSection({ bgColor }) {
   // Animation controls
   const controls = useAnimation();
   const { ref, inView } = useInView({
@@ -26,8 +26,17 @@ function CenteredTextSection() {
     visible: { opacity: 1, y: 0, transition: { duration: 3.2, ease: 'ease' } },
   };
 
+  // Handle page refresh on button click
+  const handlePageRefresh = () => {
+    window.location.href = "/contact";  // Navigate and refresh the page
+  };
+
   return (
-    <div ref={ref} className="centered-text-section relative bg-[#121212] rounded-[4rem] py-12 h-screen flex flex-col justify-center items-center">
+    <div
+      ref={ref}
+      className="centered-text-section relative rounded-[4rem] py-12 h-screen flex flex-col justify-center items-center"
+      style={{ backgroundColor: bgColor }}  // Use the bgColor prop
+    >
       <motion.h1
         className="text-white text-[30px] font-bold mb-2"
         style={{ fontFamily: '"Rowdies", sans-serif', lineHeight: '3' }}
@@ -64,7 +73,11 @@ function CenteredTextSection() {
         variants={textReveal}
       >
         {/* Get in Touch Button */}
-        <button style={{ fontFamily: '"Instrument Sans", sans-serif'}} className="bg-white text-black px-10 py-8 text-lg font-semibold rounded-full">
+        <button
+          onClick={handlePageRefresh}  // Handle refresh on click
+          style={{ fontFamily: '"Instrument Sans", sans-serif'}}
+          className="bg-white text-black px-10 py-8 text-lg font-semibold rounded-full"
+        >
           GET IN TOUCH
         </button>
         

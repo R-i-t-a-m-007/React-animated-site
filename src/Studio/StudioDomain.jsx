@@ -7,7 +7,7 @@ import { AiOutlineProduct } from "react-icons/ai";
 import { MdNightlife } from "react-icons/md";
 import { MdCorporateFare } from "react-icons/md";
 
-function StudioDomain() {
+function StudioDomain({ bgColor }) {
   const data = [
     {
       text: "Food & Beverages",
@@ -53,7 +53,8 @@ function StudioDomain() {
   }, [controls, inView]);
 
   return (
-    <section ref={ref} className="relative bg-[#121212] py-20 rounded-[4rem]">
+    <section ref={ref} className="relative bg-[#121212] py-20 rounded-[4rem]"
+    style={{ backgroundColor: bgColor }}>
       <div className="absolute top-0 left-0 p-8">
         <motion.h2
           className="text-white text-[75px] font-bold mb-8 mt-[8rem] w-[100%]"

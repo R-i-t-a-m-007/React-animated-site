@@ -1,13 +1,14 @@
 import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 
-function LogoSection() {
+function LogoSection({ bgColor }) {
   const logos = [
-    { src: "/assets/Logos/PR.png", alt: "Logo 1", number: "01", width: '250px', height: '250px' },
-    { src: "/assets/Logos/Studios.png", alt: "Logo 2", number: "02", width: '300px', height: '200px' },
-    { src: "/assets/Logos/Talent.png", alt: "Logo 3", number: "03", width: '350px', height: '300px' },
-    { src: "/assets/Logos/Finance.png", alt: "Logo 4", number: "04", width: '400px', height: '200px' }
+    { src: "/assets/Logos/PR.png", alt: "Logo 1", number: "01", width: '250px', height: '250px', route: 'pr' },
+    { src: "/assets/Logos/Studios.png", alt: "Logo 2", number: "02", width: '300px', height: '200px', route: 'studio' },
+    { src: "/assets/Logos/Talent.png", alt: "Logo 3", number: "03", width: '350px', height: '300px', route: 'contact' },
+    { src: "/assets/Logos/Finance.png", alt: "Logo 4", number: "04", width: '400px', height: '200px', route: 'finance' }
   ];
 
   // Animation controls for the heading
@@ -16,6 +17,8 @@ function LogoSection() {
     triggerOnce: false,  // Animation triggers every time the component is in view
     threshold: 0.1,  // Adjust this value to control when the animation should trigger
   });
+
+  const navigate = useNavigate(); // Initialize useNavigate
 
   // Trigger animation when in view
   React.useEffect(() => {
@@ -26,8 +29,15 @@ function LogoSection() {
     }
   }, [controls, inView]);
 
+  // Function to handle navigation and scroll to top
+  const handleNavigation = (route) => {
+    navigate(`/${route}`); // Use an absolute URL
+    window.location.reload();
+  };
+
   return (
-    <section ref={ref} className="relative bg-[#121212] py-16 rounded-[4rem]">
+    <section ref={ref} className="relative bg-[#121212] py-16 rounded-[4rem]"
+    style={{ backgroundColor: bgColor }}>
       <div className="absolute top-0 left-0 p-8">
         <motion.h2
           className="text-white text-[75px] font-bold mb-8 mt-[8rem] w-[100%]"
@@ -53,7 +63,8 @@ function LogoSection() {
           {logos.map((logo, index) => (
             <div
               key={index}
-              className="relative bg-[#1c1c1c] p-8 w-[450px] h-[450px] rounded-[1rem] flex items-center justify-center group"
+              className="relative bg-[#1c1c1c] p-8 w-[450px] h-[450px] rounded-[1rem] flex items-center justify-center group cursor-pointer"
+              onClick={() => handleNavigation(logo.route)} // Use the new handleNavigation function
             >
               {/* Number that changes color on hover */}
               <span className="absolute top-14 left-14 text-white text-3xl font-bold group-hover:text-[#f8c33c] transition-colors duration-300 ease-in-out">

@@ -53,7 +53,7 @@ function FinanceAbout() {
   return (
     <div
       ref={sectionRef}
-      className="who-we-are flex flex-col md:flex-row bg-[#121212] rounded-[4rem] items-start justify-between py-20 px-14"
+      className="who-we-are flex flex-col md:flex-row bg-[#252525] rounded-[4rem] items-start justify-between py-20 px-14"
     >
       <div className="w-full md:w-1/2">
         <h2 className="text-6xl font-semibold text-white mb-4" style={{ fontFamily: '"Kanit", sans-serif' }}>

@@ -44,7 +44,7 @@ function WhoWeAre() {
   return (
     <div ref={sectionRef} className="who-we-are flex flex-col md:flex-row items-start justify-between py-0 px-8 pb-36">
       {/* Left Side */}
-      <img src='/public/assets/whoweareimg.webp' alt='image' className='absolute right-[75rem] top-[-12rem] w-[48rem] h-[44rem] object-contain' style={{ filter: 'brightness(65%) invert(0)', WebkitFilter: 'brightness(65%) invert(0)' }} />
+      <img src='/public/assets/whoweareimg.webp' alt='image' className='absolute right-[75rem] top-[52rem] w-[48rem] h-[44rem] object-contain' style={{ filter: 'brightness(65%) invert(0)', WebkitFilter: 'brightness(65%) invert(0)' }} />
       <div className="w-full md:w-1/2 z-10">
         <h2 className="text-6xl font-semibold text-white mb-4" style={{ fontFamily: '"Kanit", sans-serif' }}>
           Who We Are

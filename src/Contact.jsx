@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-function ContactUs() {
+function ContactUs({ bgColor }) {
   return (
-    <section className="relative bg-[#121212] py-16 rounded-[4rem] px-16">
+    <section className="relative bg-[#121212] py-16 rounded-[4rem] px-16"
+    style={{ backgroundColor: bgColor }}>
       {/* Flex container for "Contact Us" heading and Map */}
       <div className="flex flex-col md:flex-row items-start gap-8">
         {/* Contact Us Heading */}
